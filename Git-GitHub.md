@@ -9,7 +9,7 @@
 <p align="center"><strong>What is Git ? How to use Git?</strong></p>
 
 
-#### DownLoad Git
+### DownLoad Git
 
 - <https://git-scm.com/downloads>
 
@@ -26,15 +26,14 @@
 
     > 第一次安裝，不勾選 Only show new options  
     > 非第一次安裝，可勾選 Only show new options
-
-    ![Step2-1](Picture/DownLoad_Git_3.jpg " ")
-    ![Step2-2](Picture/DownLoad_Git_4.jpg " ")
+    >> ![Step2-1](Picture/DownLoad_Git_3.jpg " ")
+    >> ![Step2-2](Picture/DownLoad_Git_4.jpg " ")
 
     > 恭喜你完成 Git 安裝
 
 ─────────────────────────
 
-#### Commands of Git
+### Commands of Git
 
 - __git --version__
 
@@ -54,8 +53,8 @@
     git config --global user.email "XXXXX@gmail.com"
     ```
 
-    ![Commands1](Picture/Git_2.jpg " ")
-    ![Commands2](Picture/Git_3.jpg " ")
+    ![Commands2](Picture/Git_2.jpg " ")
+    ![Commands3](Picture/Git_3.jpg " ")
 
 - __git init__
 
@@ -69,26 +68,26 @@
     git init
     ```
 
-    ![Commands3](Picture/Git_4.jpg " ")
+    ![Commands4](Picture/Git_4.jpg " ")
 
 - __Git 檔案狀態__
 
     > 未追蹤(Untracked) : 檔案內容無論怎麼變更都只是檔案本身變更，Git 不會有任何紀錄  
     >> 檔案旁邊會顯示 **U**，表示檔案 Unstraked  
-    >>> ![Commands4](Picture/Git_6.jpg " ")
+    >>> ![Commands5](Picture/Git_6.jpg " ")
 
     > 已追蹤(Tracked) : 將檔案納入已追蹤後，Git 會開始記錄檔案的所有變更紀錄
     > 已暫存(Stage) : 檔案被追蹤時，就已經納入暫存區，準備提交
     >> 檔案旁邊會顯示 **A**，表示檔案 Stracked
-    >>> ![Commands5](Picture/Git_7.jpg " ")
+    >>> ![Commands6](Picture/Git_7.jpg " ")
 
     > 已提交(Commited) : 將檔案提交後，可以 push 至雲端
     >> 檔案旁邊的字母會消失
-    >>> ![Commands5](Picture/Git_8.jpg " ")
+    >>> ![Commands7](Picture/Git_8.jpg " ")
 
     > 當文件被變更後，需要重新將檔案納入暫存區
     >> 檔案旁邊會顯示 **M**，表示檔案已變更 但尚未提交
-    >>> ![Commands5](Picture/Git_9.jpg " ")
+    >>> ![Commands8](Picture/Git_9.jpg " ")
 
 
 - __git status__
@@ -99,7 +98,7 @@
     git status
     ```
     
-    ![Commands8](Picture/Git_5.jpg " ")
+    ![Commands9](Picture/Git_5.jpg " ")
 
 - __git add__
 
@@ -166,4 +165,48 @@
 
     ```bash
     git reset --hard XXXXXXX
+    ```
+
+- __git push__
+
+    | 將本地端資料推送至雲端
+
+    | 讓兩端儲存庫維持同步狀態
+
+    ```bash
+    git push
+    ```
+
+---
+
+<h2 align="center">GitHub</h2>
+
+<p align="center"><strong>What is GitHub ? How to use GitHub?</strong></p>
+
+### Operate of GitHub
+
+- __Create Repository__
+
+    > 建立一個儲存庫
+    > 填寫內容 (儲存庫名稱、說明文字、公開/私人)
+    >> ![GitHub1](Picture/GitHub_1.jpg " ")
+
+- __Connect Repository__
+
+    | 連結本地與雲端的儲存庫
+
+    ```bash
+    git remote add origin https://github.com/XXXXX/XXXXX.git
+    ```
+
+    | 將主線分支名稱從 master 改為 main
+    
+    ```bash
+    git branch -M main
+    ```
+
+    | 將本地端資料推送至雲端
+
+    ```bash
+    git push -u orign main
     ```
