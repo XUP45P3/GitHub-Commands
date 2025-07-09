@@ -193,6 +193,8 @@
 
 - __Connect Repository__
 
+    ![GitHub2](Picture/GitHub_2.jpg " ")
+
     | 連結本地與雲端的儲存庫
 
     ```bash
