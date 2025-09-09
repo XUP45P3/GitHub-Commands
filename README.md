@@ -9,11 +9,6 @@
 
 ---
 
-### 📁 Classification
-- 雲端儲存庫分類
-
-─────────────────────────
-
 ### 📁 GitHub-Commands
 - Git 安裝、指令
 - GitHub 介紹
